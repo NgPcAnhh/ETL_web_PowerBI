@@ -1,0 +1,511 @@
+.container {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  --c: 7px;
+  background-color: #000;
+  background-image: radial-gradient(
+      circle at 50% 50%,
+      #0000 1.5px,
+      #000 0 var(--c),
+      #0000 var(--c)
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      #0000 1.5px,
+      #000 0 var(--c),
+      #0000 var(--c)
+    ),
+    radial-gradient(circle at 50% 50%, #f00, #f000 60%),
+    radial-gradient(circle at 50% 50%, #ff0, #ff00 60%),
+    radial-gradient(circle at 50% 50%, #0f0, #0f00 60%),
+    radial-gradient(ellipse at 50% 50%, #00f, #00f0 60%);
+  background-size:
+    12px 20.7846097px,
+    12px 20.7846097px,
+    200% 200%,
+    200% 200%,
+    200% 200%,
+    200% 20.7846097px;
+  --p: 0px 0px, 6px 10.39230485px;
+  background-position:
+    var(--p),
+    0% 0%,
+    0% 0%,
+    0% 0px;
+  animation:
+    wee 40s linear infinite,
+    filt 6s linear infinite;
+}
+
+@keyframes filt {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes wee {
+  0% {
+    background-position:
+      var(--p),
+      800% 400%,
+      1000% -400%,
+      -1200% -600%,
+      400% 41.5692194px;
+  }
+  to {
+    background-position:
+      var(--p),
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%;
+  }
+}
+
+.modelViewPort {
+  /* Đưa lên góc trên bên trái */
+  position: fixed;
+  top: 24px;    /* hoặc 0 nếu muốn sát mép */
+  left: 24px;   /* hoặc 0 nếu muốn sát mép */
+  z-index: 2;
+  perspective: 1000px;
+  width: 25rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  overflow: hidden;
+}
+.eva {
+    --EVA-ROTATION-DURATION: 4s;
+    transform-style: preserve-3d;
+    animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+    transform: scale(2); /* Tăng kích thước toàn bộ robot lên 1.5 lần */
+}
+.head {
+position: relative;
+width: 6rem;
+height: 4rem;
+border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+background: linear-gradient(to right, white 45%, gray);
+}
+.eyeChamber {
+width: 4.5rem;
+height: 2.75rem;
+position: relative;
+left: 50%;
+top: 55%;
+border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+background-color: #0c203c;
+box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+transform: translate(-50%, -50%);
+animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+.eye {
+width: 1.2rem;
+height: 1.5rem;
+position: absolute;
+border-radius: 50%;
+}
+.eye:first-child {
+left: 12px;
+top: 50%;
+background: repeating-linear-gradient(
+    65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+);
+box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+transform: translate(0, -50%) rotate(-65deg);
+}
+.eye:nth-child(2) {
+right: 12px;
+top: 50%;
+background: repeating-linear-gradient(
+    -65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+);
+box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+transform: translate(0, -50%) rotate(65deg);
+}
+.body {
+    width: 6rem;
+    height: 12rem;
+    position: relative;
+    margin-block-start: 0.25rem;
+    border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+    background: linear-gradient(to right, white 35%, gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hand {
+position: absolute;
+left: -1.5rem;
+top: 0.75rem;
+width: 2rem;
+height: 5.5rem;
+border-radius: 40%;
+background: linear-gradient(to left, white 15%, gray);
+box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+transform: rotateY(55deg) rotateZ(10deg);
+}
+.hand:first-child {
+animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite
+    alternate;
+}
+.hand:nth-child(2) {
+left: 92%;
+background: linear-gradient(to right, white 15%, gray);
+transform: rotateY(55deg) rotateZ(-10deg);
+animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear
+    infinite alternate;
+}
+.scannerThing {
+width: 0;
+height: 0;
+position: absolute;
+left: 60%;
+top: 10%;
+border-top: 180px solid #9bdaeb;
+border-left: 250px solid transparent;
+border-right: 250px solid transparent;
+transform-origin: top left;
+mask: linear-gradient(to right, white, transparent 35%);
+animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+.scannerOrigin {
+position: absolute;
+width: 8px;
+aspect-ratio: 1;
+border-radius: 50%;
+left: 60%;
+top: 10%;
+background: #9bdaeb;
+box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+}
+@keyframes rotateRight {
+from {
+    transform: rotateY(0deg);
+}
+to {
+    transform: rotateY(25deg);
+}
+}
+@keyframes moveRight {
+from {
+    transform: translate(-50%, -50%);
+}
+to {
+    transform: translate(-40%, -50%);
+}
+}
+@keyframes compensateRotation {
+from {
+    transform: rotateY(55deg) rotateZ(10deg);
+}
+to {
+    transform: rotatey(30deg) rotateZ(10deg);
+}
+}
+@keyframes compensateRotationRight {
+from {
+    transform: rotateY(55deg) rotateZ(-10deg);
+}
+to {
+    transform: rotateY(70deg) rotateZ(-10deg);
+}
+}
+@keyframes glow {
+from {
+    opacity: 0;
+}
+20% {
+    opacity: 1;
+}
+45% {
+    transform: rotate(-25deg);
+}
+75% {
+    transform: rotate(5deg);
+}
+100% {
+    opacity: 0;
+}
+}
+
+
+/* Thêm hoặc cập nhật vào cuối file admin.css */
+
+.admin-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.admin-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 30vw;
+  min-width: 320px;
+  padding: 40px 0 0 40px;
+  gap: 32px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.m2 {
+  position: relative;
+  width: 30vmin;
+  height: 30vmin;
+  background: linear-gradient(135deg, #1e1e24 10%, #050505 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  animation: gradient-shift 5s ease-in-out infinite;
+  background-size: 200% 200%;
+  margin-top: 360px;
+  margin-left: 55px;
+  cursor: pointer;           /* Thêm dòng này để hiển thị con trỏ tay */
+  transition: box-shadow 0.2s, filter 0.2s;
+  outline: none;
+}
+.m2:active,
+.m2:focus {
+  box-shadow: 0 0 0 4px #22c55e88;
+  filter: brightness(1.1);
+}
+
+.m2 .logo {
+  display: inline-block;
+  vertical-align: baseline;
+  user-select: none;
+  font-size: 5vmin;
+  color: white;
+  background-image: linear-gradient(to right, #626262, #fff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+
+.m2 .logo svg {
+  margin-right: -1vmin;
+  width: 5vmin;
+  height: 5vmin;
+}
+
+.m2::before,
+.m2::after {
+  --size: 5px;
+  content: "";
+  position: absolute;
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  width: calc(100% + var(--size));
+  height: calc(100% + var(--size));
+  background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+    radial-gradient(circle at 100% 0, #00a6ff, transparent),
+    radial-gradient(circle at 0 100%, #ff0056, transparent),
+    radial-gradient(circle at 100% 100%, #6500ff, transparent);
+}
+
+.m2::after {
+  --size: 2px;
+  z-index: -1;
+}
+
+.m2::before {
+  --size: 10px;
+  z-index: -2;
+  filter: blur(2vmin);
+  animation: blur-animation 3s ease-in-out alternate infinite;
+}
+
+@keyframes blur-animation {
+  to {
+    filter: blur(3vmin);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.admin-right {
+  width: 70vw;
+  min-width: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 40px 20vh 0 0;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.code-panel {
+  width: 100%;
+  max-width: 900px;
+  min-width: 340px;
+  height: 80vh;
+  background: #18181b;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #0006;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  z-index: 100;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #232323;
+  padding: 12px 18px 8px 18px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.code-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #facc15; }
+.dot-green { background: #22c55e; }
+
+.code-title {
+  font-size: 0.95rem;
+  color: #bbb;
+  font-weight: 500;
+}
+
+.code-body {
+  background: #18181b;
+  padding: 20px 18px;
+  font-size: 1.08rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  min-height: 160px;
+  flex: 1;
+  white-space: pre-line;
+  display: flex;
+}
+
+.code-textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: #fff;
+  border: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 1.08rem;
+  outline: none;
+  line-height: 1.7;
+  padding: 0;
+}
+
+
+
+
+.sql-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sql-modal-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.sql-modal-content {
+  position: relative;
+  width: 70vw;
+  max-width: 900px;
+  max-height: 80vh;
+  background: #232323;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px #000a;
+  padding: 32px 24px 24px 24px;
+  z-index: 2;
+  overflow: auto;
+  animation: fadeIn 0.2s;
+}
+.sql-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 3;
+}
+.sql-modal-table {
+  overflow-x: auto;
+}
+.sql-modal-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #18181b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.sql-modal-table th, .sql-modal-table td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: left;
+}
+.sql-modal-table th {
+  background: #333;
+  color: #4ade80;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: none;}
+}

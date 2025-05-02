@@ -1,0 +1,28 @@
+- truy cập vào file {maCP}_income_statement.csv trong folder ../csv/data_processed/csv/ 
+- quy đổi quý thành 2 ô => là ô Quý và ô Năm. giá trị x/yyyy biến đổi thành x thành Quý và yyyy cho vào ô năm.
+
+- chỉ giữ lại những giá trị sau: 
+    Doanh thu:
+    doanh thu thuần
+    doanh thu từ hoạt động tài chính 
+    Chi phí:
+    giá vốn hàng bán:
+    chi phí tài chính
+    chi phí bán hàng
+    chi phí quản lý doanh nghiệp
+    chi phí khác
+    Thuế: 
+    thuế TNDN hiện hành
+    thuế TNDN hoãn lại 
+    Lợi nhuận: 
+    lãi lỗ công ty liên doanh 
+    Lợi nhuận gộp
+    Lợi nhuận thuần 
+    Lợi nhuận khác
+    Lợi nhuận trước thuế
+    Lợi nhuận sau thuế
+    Lợi nhuận sau thuế công ty mẹ 
+    Lợi nhuận  sau thuế công ty mẹ không kiểm soát 
+
+- tạo ra file csv mới có dạng {ma_cp}_income_statement.csv trong folder ../csv/load/csv/
+
