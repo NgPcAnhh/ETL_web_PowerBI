@@ -42,26 +42,4 @@ Flask: Xây dựng web dashboard và phục vụ API.
 
 CSV: Định dạng trung gian trong quá trình ETL.
 
-Cấu trúc thư mục (gợi ý)
-css
-Sao chép
-Chỉnh sửa
-ETL_web_PowerBI/
-├── csv/   
-├── extract/  
-├── load/  
-├── transform/           # Python scripts để xử lý dữ liệu và xuất CSV
-├── powerbi/             # File .pbix báo cáo Power BI
-├── webflask/                 # Ứng dụng Flask
-│   ├── templates/
-│   ├── static/css,js
-│   └── app.py
-└── requirements.txt     # Các gói Python cần thiết
 
-Chạy web Flask:
-
-bash
-Sao chép
-Chỉnh sửa
-cd web
-python app.py
