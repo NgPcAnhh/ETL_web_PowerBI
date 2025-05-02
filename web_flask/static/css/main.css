@@ -1,0 +1,1123 @@
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  body {
+    --c: #09f;
+    background-color: #000;
+    background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+    background-size:
+      300px 235px,
+      300px 235px,
+      300px 235px,
+      300px 252px,
+      300px 252px,
+      300px 252px,
+      300px 150px,
+      300px 150px,
+      300px 150px,
+      300px 253px,
+      300px 253px,
+      300px 253px,
+      300px 204px,
+      300px 204px,
+      300px 204px,
+      300px 134px,
+      300px 134px,
+      300px 134px,
+      300px 179px,
+      300px 179px,
+      300px 179px,
+      300px 299px,
+      300px 299px,
+      300px 299px,
+      300px 215px,
+      300px 215px,
+      300px 215px,
+      300px 281px,
+      300px 281px,
+      300px 281px,
+      300px 158px,
+      300px 158px,
+      300px 158px,
+      300px 210px,
+      300px 210px,
+      300px 210px;
+    animation: hi 150s linear infinite;
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 50% 50%,
+      #0000 0,
+      #0000 2px,
+      hsl(0 0 4%) 2px
+    );
+    background-size: 8px 8px;
+    --f: blur(1em) brightness(6);
+    animation: hii 10s linear infinite;
+  }
+  
+  @keyframes hi {
+    0% {
+      background-position:
+        0px 220px,
+        3px 220px,
+        151.5px 337.5px,
+        25px 24px,
+        28px 24px,
+        176.5px 150px,
+        50px 16px,
+        53px 16px,
+        201.5px 91px,
+        75px 224px,
+        78px 224px,
+        226.5px 350.5px,
+        100px 19px,
+        103px 19px,
+        251.5px 121px,
+        125px 120px,
+        128px 120px,
+        276.5px 187px,
+        150px 31px,
+        153px 31px,
+        301.5px 120.5px,
+        175px 235px,
+        178px 235px,
+        326.5px 384.5px,
+        200px 121px,
+        203px 121px,
+        351.5px 228.5px,
+        225px 224px,
+        228px 224px,
+        376.5px 364.5px,
+        250px 26px,
+        253px 26px,
+        401.5px 105px,
+        275px 75px,
+        278px 75px,
+        426.5px 180px;
+    }
+  
+    to {
+      background-position:
+        0px 6800px,
+        3px 6800px,
+        151.5px 6917.5px,
+        25px 13632px,
+        28px 13632px,
+        176.5px 13758px,
+        50px 5416px,
+        53px 5416px,
+        201.5px 5491px,
+        75px 17175px,
+        78px 17175px,
+        226.5px 17301.5px,
+        100px 5119px,
+        103px 5119px,
+        251.5px 5221px,
+        125px 8428px,
+        128px 8428px,
+        276.5px 8495px,
+        150px 9876px,
+        153px 9876px,
+        301.5px 9965.5px,
+        175px 13391px,
+        178px 13391px,
+        326.5px 13540.5px,
+        200px 14741px,
+        203px 14741px,
+        351.5px 14848.5px,
+        225px 18770px,
+        228px 18770px,
+        376.5px 18910.5px,
+        250px 5082px,
+        253px 5082px,
+        401.5px 5161px,
+        275px 6375px,
+        278px 6375px,
+        426.5px 6480px;
+    }
+  }
+  
+  @keyframes hii {
+    0% {
+      backdrop-filter: var(--f) hue-rotate(0deg);
+    }
+    to {
+      backdrop-filter: var(--f) hue-rotate(360deg);
+    }
+  }
+
+.main-header {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: rgba(10, 10, 20, 0.7);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.header-center {
+    color: #b2fff7;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 8px #000, 0 0 2px #09f;
+    user-select: none;
+    pointer-events: none;
+    margin: 0 auto;
+}
+
+/* Nút mới dạng pill, hiệu ứng chỉ trong button */
+.main-header .button {
+    --stone-50: #fafaf9;
+    --stone-800: #292524;
+    --yellow-400: #facc15;
+
+    font-family: "Rubik", sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) scale(0.8); /* Nhỏ đi 50% */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 1rem;
+    border-radius: 1rem;
+    outline: 2px solid transparent;
+    outline-offset: 6px;
+    color: var(--stone-50);
+    background: none;
+    border: none;
+    z-index: 2;
+    padding: 0;
+    box-shadow: none;
+}
+
+.main-header .button:active {
+    outline-color: var(--yellow-400);
+}
+.main-header .button:focus-visible {
+    outline-color: var(--yellow-400);
+    outline-style: dashed;
+}
+.main-header .button::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    height: 200%;
+    max-height: 100px;
+    aspect-ratio: 1;
+    margin: auto;
+    background: white;
+    clip-path: polygon(
+      100% 50%,
+      91.48% 56.57%,
+      97.55% 65.45%,
+      87.42% 69.07%,
+      90.45% 79.39%,
+      79.7% 79.7%,
+      79.39% 90.45%,
+      69.07% 87.42%,
+      65.45% 97.55%,
+      56.57% 91.48%,
+      50% 100%,
+      43.43% 91.48%,
+      34.55% 97.55%,
+      30.93% 87.42%,
+      20.61% 90.45%,
+      20.3% 79.7%,
+      9.55% 79.39%,
+      12.58% 69.07%,
+      2.45% 65.45%,
+      8.52% 56.57%,
+      0% 50%,
+      8.52% 43.43%,
+      2.45% 34.55%,
+      12.58% 30.93%,
+      9.55% 20.61%,
+      20.3% 20.3%,
+      20.61% 9.55%,
+      30.93% 12.58%,
+      34.55% 2.45%,
+      43.43% 8.52%,
+      50% 0%,
+      56.57% 8.52%,
+      65.45% 2.45%,
+      69.07% 12.58%,
+      79.39% 9.55%,
+      79.7% 20.3%,
+      90.45% 20.61%,
+      87.42% 30.93%,
+      97.55% 34.55%,
+      91.48% 43.43%
+    );
+    animation: star-rotate 4s linear infinite;
+    opacity: 0.1;
+    left: 0; right: 0; top: 0; bottom: 0;
+    pointer-events: none;
+}
+.main-header .button:hover::before {
+    opacity: 1;
+}
+.main-header .button > div {
+    padding: 2px;
+    border-radius: 1rem;
+    background-color: var(--yellow-400);
+    transform: translate(-4px, -4px);
+    transition: all 150ms ease;
+    box-shadow:
+      0.5px 0.5px 0 0 var(--yellow-400),
+      1px 1px 0 0 var(--yellow-400),
+      1.5px 1.5px 0 0 var(--yellow-400),
+      2px 2px 0 0 var(--yellow-400),
+      2.5px 2.5px 0 0 var(--yellow-400),
+      3px 3px 0 0 var(--yellow-400),
+      0 0 0 2px var(--stone-800),
+      0.5px 0.5px 0 2px var(--stone-800),
+      1px 1px 0 2px var(--stone-800),
+      1.5px 1.5px 0 2px var(--stone-800),
+      2px 2px 0 2px var(--stone-800),
+      2.5px 2.5px 0 2px var(--stone-800),
+      3px 3px 0 2px var(--stone-800),
+      3.5px 3.5px 0 2px var(--stone-800),
+      4px 4px 0 2px var(--stone-800),
+      0 0 0 4px var(--stone-50),
+      0.5px 0.5px 0 4px var(--stone-50),
+      1px 1px 0 4px var(--stone-50),
+      1.5px 1.5px 0 4px var(--stone-50),
+      2px 2px 0 4px var(--stone-50),
+      2.5px 2.5px 0 4px var(--stone-50),
+      3px 3px 0 4px var(--stone-50),
+      3.5px 3.5px 0 4px var(--stone-50),
+      4px 4px 0 4px var(--stone-50);
+}
+.main-header .button:hover > div {
+    transform: translate(0, 0);
+    box-shadow:
+      0 0 0 0 var(--yellow-400),
+      0 0 0 0 var(--yellow-400),
+      0 0 0 0 var(--yellow-400),
+      0 0 0 0 var(--yellow-400),
+      0 0 0 0 var(--yellow-400),
+      0 0 0 0 var(--yellow-400),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 2px var(--stone-800),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50),
+      0 0 0 4px var(--stone-50);
+}
+.main-header .button > div > div {
+    position: relative;
+    pointer-events: none;
+    border-radius: calc(1rem - 2px);
+    background-color: var(--stone-800);
+}
+.main-header .button > div > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    opacity: 0.1;
+    background-image: radial-gradient(
+        rgb(255 255 255 / 80%) 20%,
+        transparent 20%
+      ),
+      radial-gradient(rgb(255 255 255 / 100%) 20%, transparent 20%);
+    background-position:
+      0 0,
+      4px 4px;
+    background-size: 8px 8px;
+    mix-blend-mode: hard-light;
+    box-shadow: inset 0 0 0 1px var(--stone-800);
+    animation: dots 0.4s infinite linear;
+    transition: opacity 150ms ease;
+}
+.main-header .button > div > div > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    gap: 0.25rem;
+    filter: drop-shadow(0 -1px 0 var(--stone-800));
+}
+.main-header .button > div > div > div:hover {
+    filter: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.1));
+}
+.main-header .button > div > div > div:active {
+    transform: translateY(2px);
+}
+
+@keyframes star-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dots {
+  0% {
+    background-position:
+      0 0,
+      4px 4px;
+  }
+  100% {
+    background-position:
+      8px 0,
+      12px 4px;
+  }
+}
+
+
+.center-frame {
+  width: 70vw;
+  height: 70vh;
+  background: #012e2733; /* trắng xám */
+  margin: 5vh auto 0 auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1001;
+  overflow: hidden; /* Đảm bảo các phần tử con không tràn ra ngoài */
+}
+
+.black-rectangle {
+  width: 500px; /* Điều chỉnh chiều rộng phù hợp */
+  height: 400px; /* Điều chỉnh chiều cao phù hợp */
+  margin-left: auto; /* Đẩy sang bên phải */
+  margin-right: 80px; /* Khoảng cách từ mép phải */
+  margin-top: 50px; /* Khoảng cách từ mép trên */
+  border-radius: 10px; /* Bo góc cho đẹp */
+  background: transparent; /* Màu trong suốt */
+  box-shadow: none; /* Không có viền */
+
+  position: relative;
+  z-index: 1002; /* Đảm bảo hiển thị trên nền */
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Hiệu ứng sao lấp lánh */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+@keyframes twinkle-slow {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.7; }
+}
+
+/* Card đỏ - ít sao */
+.cards .red {
+  background: linear-gradient(135deg, #0a0118 0%, #220b36 50%, #33105c 100%);
+  box-shadow: 0 4px 12px rgba(51, 16, 92, 0.5), inset 0 0 20px rgba(138, 43, 226, 0.2);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cards .red::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1px 1px at 20% 30%, white 100%, transparent),
+    radial-gradient(1px 1px at 40% 70%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 70% 20%, white 100%, transparent),
+    radial-gradient(1px 1px at 90% 40%, white 100%, transparent),
+    radial-gradient(1px 1px at 15% 80%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 60% 90%, white 100%, transparent);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card xanh - sao vừa */
+.cards .blue {
+  background: linear-gradient(135deg, #041729 0%, #0c2b4d 50%, #143d6b 100%);
+  box-shadow: 0 4px 12px rgba(20, 61, 107, 0.5), inset 0 0 20px rgba(64, 144, 181, 0.2);
+  border: 1px solid rgba(64, 144, 181, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cards .blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1px 1px at 10% 10%, white 100%, transparent),
+    radial-gradient(1px 1px at 25% 30%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 60% 15%, white 100%, transparent),
+    radial-gradient(1px 1px at 35% 60%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 85% 25%, white 100%, transparent),
+    radial-gradient(1px 1px at 50% 90%, white 100%, transparent),
+    radial-gradient(1px 1px at 75% 75%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 15% 85%, white 100%, transparent),
+    radial-gradient(1px 1px at 95% 50%, white 100%, transparent);
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card xanh lá - nhiều sao */
+.cards .green {
+  background: linear-gradient(135deg, #071b14 0%, #0c2e22 50%, #13402f 100%);
+  box-shadow: 0 4px 12px rgba(19, 64, 47, 0.5), inset 0 0 20px rgba(8, 78, 59, 0.2);
+  border: 1px solid rgba(8, 78, 59, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cards .green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1px 1px at 5% 10%, white 100%, transparent),
+    radial-gradient(1px 1px at 20% 20%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 40% 5%, white 100%, transparent),
+    radial-gradient(1px 1px at 65% 15%, white 100%, transparent),
+    radial-gradient(1px 1px at 85% 10%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 15% 40%, white 100%, transparent),
+    radial-gradient(1px 1px at 30% 60%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 55% 40%, white 100%, transparent),
+    radial-gradient(1px 1px at 75% 60%, white 100%, transparent),
+    radial-gradient(1px 1px at 95% 35%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 10% 80%, white 100%, transparent),
+    radial-gradient(1px 1px at 30% 90%, white 100%, transparent),
+    radial-gradient(1.5px 1.5px at 50% 70%, white 100%, transparent),
+    radial-gradient(1px 1px at 70% 85%, white 100%, transparent),
+    radial-gradient(1px 1px at 90% 80%, white 100%, transparent);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Thêm hiệu ứng sao lấp lánh */
+.cards .red::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 30% 15%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 85% 60%, rgba(255,255,255,0.9) 100%, transparent);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  animation: twinkle 4s infinite;
+}
+
+.cards .blue::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 40% 20%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 65% 40%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 20% 65%, rgba(255,255,255,0.9) 100%, transparent);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  animation: twinkle-slow 6s infinite;
+}
+
+.cards .green::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 25% 25%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 55% 60%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 80% 20%, rgba(255,255,255,0.9) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 15% 70%, rgba(255,255,255,0.9) 100%, transparent);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  animation: twinkle 7s infinite;
+}
+
+/* Đảm bảo nội dung hiển thị trên các pseudo-elements */
+.cards .card p.tip, 
+.cards .card p.second-text,
+.cards .card a.tip {
+  position: relative;
+  z-index: 2;
+}
+
+.cards .card {
+  width: 100%; /* thay vì 250px cố định */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.cards .card p.second-text {
+  font-size: 1.2em;
+}
+
+.cards .card:hover {
+  transform: scale(1.05, 1.05);
+  z-index: 3;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15), 
+              inset 0 0 30px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cards .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 3%),
+                    radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 2%);
+  pointer-events: none;
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+
+
+
+.card-in-frame {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 240px;   /* gấp đôi 240px */
+  height: 154px;  /* gấp đôi 154px */
+  perspective: 1000px;
+  color: white;
+}
+.heading_8264 {
+  position: absolute;
+  letter-spacing: .2em;
+  font-size: 0.5em;
+  top: 2em;
+  left: 18.6em;
+}
+
+.logo {
+  position: absolute;
+  top: 6.8em;
+  left: 11.7em;
+}
+
+.chip {
+  position: absolute;
+  top: 2.3em;
+  left: 1.5em;
+}
+
+.contactless {
+  position: absolute;
+  top: 3.5em;
+  left: 12.4em;
+}
+
+.number {
+  position: absolute;
+  font-weight: bold;
+  font-size: .6em;
+  top: 8.3em;
+  left: 1.6em;
+}
+
+.valid_thru {
+  position: absolute;
+  font-weight: bold;
+  top: 635.8em;
+  font-size: .01em;
+  left: 140.3em;
+}
+
+.date_8264 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.5em;
+  top: 13.6em;
+  left: 3.2em;
+}
+
+.name {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.5em;
+  top: 16.1em;
+  left: 2em;
+}
+
+.strip {
+  position: absolute;
+  background-color: black;
+  width: 15em;
+  height: 1.5em;
+  top: 2.4em;
+  background: repeating-linear-gradient(
+    45deg,
+    #303030,
+    #303030 10px,
+    #202020 10px,
+    #202020 20px
+  );
+}
+
+.mstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 8em;
+  height: 0.8em;
+  top: 5em;
+  left: .8em;
+  border-radius: 2.5px;
+}
+
+.sstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 4.1em;
+  height: 0.8em;
+  top: 5em;
+  left: 10em;
+  border-radius: 2.5px;
+}
+
+.code {
+  font-weight: bold;
+  text-align: center;
+  margin: .2em;
+  color: black;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+  transform: rotateY(180deg);
+}
+
+
+#SubscribeTXT {
+  font-size: 20px;
+  color: #9fc4d0;
+}
+
+button {
+  color: #9fc4d0;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0 0;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #06aed8;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+  width: 100%;
+}
+
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  margin: 40px 0 0 50px;
+  width: auto;
+  align-self: flex-start;
+  aspect-ratio: 16/9;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  filter: drop-shadow(46px 36px 24px #4090b5) drop-shadow(-55px -40px 25px #9e30a9);
+  animation: blinkShadowsFilter 8s ease-in infinite;
+}
+
+.input-content {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1em;
+}
+
+.input-content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  -webkit-clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  background: rgba(122, 251, 255, 0.5568627451);
+  transition: all 1s ease-in-out;
+}
+
+.input-content::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  box-shadow: inset 0px 0px 20px 20px #212121;
+  background: repeating-linear-gradient(to bottom, transparent 0%, rgba(64, 144, 181, 0.6) 1px, rgb(0, 0, 0) 3px, hsl(295, 60%, 12%) 5px, #153544 4px, transparent 0.5%), repeating-linear-gradient(to left, hsl(295, 60%, 12%) 100%, hsla(295, 60%, 12%, 0.99) 100%);
+  -webkit-clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  animation: backglitch 50ms linear infinite;
+}
+
+.input-dist {
+  z-index: 80;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-inline: 1em;
+  padding-block: 1.2em;
+  grid-template-columns: 1fr;
+}
+
+.input-type {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.1rem;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.input-is {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  transition: all 1s ease-in-out;
+  border-bottom: 1px solid hsl(221, 26%, 43%);
+}
+
+.input-is:hover {
+  transition: all 1s ease-in-out;
+  background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
+}
+
+.input-content:focus-within::before {
+  transition: all 1s ease-in-out;
+  background: hsla(0, 0%, 100%, 0.814);
+}
+
+.input-is:focus {
+  outline: none;
+  border-bottom: 1px solid hsl(192, 100%, 100%);
+  color: hsl(192, 100%, 88%);
+  background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
+}
+
+.input-is::-moz-placeholder {
+  color: hsla(192, 100%, 88%, 0.806);
+}
+
+.input-is::placeholder {
+  color: hsla(192, 100%, 88%, 0.806);
+}
+
+@keyframes backglitch {
+  0% {
+    box-shadow: inset 0px 20px 20px 30px #212121;
+  }
+
+  50% {
+    box-shadow: inset 0px -20px 20px 30px hsl(297, 42%, 10%);
+  }
+
+  to {
+    box-shadow: inset 0px 20px 20px 30px #212121;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(-50%, 20%);
+  }
+
+  50% {
+    transform: rotate(180deg) translate(40%, 10%);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-50%, 20%);
+  }
+}
+
+@keyframes blinkShadowsFilter {
+  0% {
+    filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
+  }
+
+  25% {
+    filter: drop-shadow(46px -36px 24px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 24px #9e30a9);
+  }
+
+  50% {
+    filter: drop-shadow(46px 36px 30px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 30px rgba(159, 48, 169, 0.2941176471));
+  }
+
+  75% {
+    filter: drop-shadow(20px -18px 25px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-20px 20px 25px rgba(159, 48, 169, 0.2941176471));
+  }
+
+  to {
+    filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
+  }
+}
+
+
+
+.side-cards {
+  margin-left: auto;
+  margin-right: 40px;
+  /* margin-top: 60px;  XÓA DÒNG NÀY */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* hoặc center nếu muốn căn giữa theo chiều dọc */
+  z-index: 2;
+  /* Nếu vẫn bị chìm, thử thêm: */
+  position: relative;
+}
+
+/* From Uiverse.io by kamehame-ha */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .card {
+  width: 100%; /* thay vì 250px cố định */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
+  position: relative;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 1;
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+/* Responsive: stack below on small screens */
+@media (max-width: 900px) {
+  .center-frame {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-cards {
+    margin: 30px auto 0 auto;
+    align-items: center;
+  }
+}

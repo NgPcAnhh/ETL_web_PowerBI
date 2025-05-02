@@ -1,0 +1,12 @@
+# Xét mã cổ phiếu được chọn 
+ma_cp = VGI
+
+# Excel file path to convert
+excel_path=../csv/data_crawl/financial_report_{ma_cp}.xlsx
+
+# Output directory for CSV files
+output_dir=../csv/data_processed
+
+# Xét quý được chọn 
+start = 1/2008
+end = 4/2024
