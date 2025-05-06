@@ -83,7 +83,7 @@
   justify-content: center;
   align-items: center;
   background: transparent;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .eva {
     --EVA-ROTATION-DURATION: 4s;

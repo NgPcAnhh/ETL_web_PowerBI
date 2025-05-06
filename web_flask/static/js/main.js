@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 // Xử lý sự kiện cho các card
 document.querySelector('.card.red').addEventListener('click', function(e) {
     if (window.userStatus === 1) {
-        window.location.href = '/premiumreport';
+        window.location.href = '/freereport';
     } else {
         showAccessDenied('Bạn không có quyền truy cập báo cáo cơ bản! Vui lòng mua gói để truy cập');
     }
@@ -65,7 +65,7 @@ document.querySelector('.card.red').addEventListener('click', function(e) {
 
 document.querySelector('.card.blue').addEventListener('click', function(e) {
     if (window.userStatus === 0 || window.userStatus === 1) {
-        window.location.href = '/freereport';
+        window.location.href = '/premiumreport';
     } else {
         showAccessDenied('Bạn không có quyền truy cập báo cáo nâng cao! Vui lòng mua gói để truy cập');
     }
@@ -74,3 +74,5 @@ document.querySelector('.card.blue').addEventListener('click', function(e) {
 document.querySelector('.card.green').addEventListener('click', function(e) {
     window.location.href = '/purchase';
 });
+
+
