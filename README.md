@@ -60,21 +60,24 @@ Docker hóa: giúp dễ triển khai, quản lý và mở rộng quy mô.
 
 ✅ Đây là phiên bản chính, giúp hệ thống luôn cập nhật dữ liệu mới và phục vụ tốt cho báo cáo BI tự động.
 
-📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục
 
-|-- config               # Cấu hình ETL
-|-- csv                  # Dữ liệu đã xử lý ở dạng CSV
-|-- dags                 # DAGs Airflow
-|-- extract              # Mã crawl dữ liệu (Golang cho Web, Python cho Airflow)
-|-- transform            # Làm sạch và xử lý dữ liệu
-|-- load                 # Load dữ liệu vào hệ thống
-|-- logs                 # Log pipeline
-|-- web_flask            # Flask app hỗ trợ thao tác thủ công
-|-- .env                 # Biến môi trường
-|-- Dockerfile           # Docker image chính
-|-- docker-compose.yaml  # Docker orchestration
-|-- requirements.txt     # Thư viện Python cho ETL
-|-- requirements2.txt    # (Tuỳ chọn) Thư viện cho Flask Web
+| Thư mục / Tệp              | Mô tả                                                             |
+|---------------------------|--------------------------------------------------------------------|
+| `config/`                 | Cấu hình ETL                                                      |
+| `csv/`                    | Dữ liệu đã xử lý ở dạng CSV                                       |
+| `dags/`                   | DAGs Airflow                                                      |
+| `extract/`                | Mã crawl dữ liệu (Golang cho Web, Python cho Airflow)             |
+| `transform/`              | Làm sạch và xử lý dữ liệu                                         |
+| `load/`                   | Load dữ liệu vào hệ thống                                         |
+| `logs/`                   | Log pipeline                                                      |
+| `web_flask/`              | Flask app hỗ trợ thao tác thủ công                                |
+| `.env`                    | Biến môi trường cấu hình                                          |
+| `Dockerfile`              | Docker image chính                                                |
+| `docker-compose.yaml`     | Docker orchestration                                              |
+| `requirements.txt`        | Thư viện Python cho ETL                                           |
+| `requirements2.txt`       | (Tuỳ chọn) Thư viện cho Flask Web                                 |
+
 
 🚀 Hướng dẫn cài đặt
 
