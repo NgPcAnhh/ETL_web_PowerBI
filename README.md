@@ -132,3 +132,10 @@ Truy cập web tại ```http://localhost:5000```
 
 Chạy lệnh /admin suggest để tham khảo và sử dụng các chức năng hướng dẫn crawl dữ liệu, xử lý thủ công có sẵn.
 
+Kết quả: 
+![Cấu trúc thư mục của dự án ETL](image/1.jpeg)
+![Cấu trúc thư mục của dự án ETL](image/2.jpeg)
+![Cấu trúc thư mục của dự án ETL](image/3.jpeg)
+![Cấu trúc thư mục của dự án ETL](image/4.jpeg)
+![Cấu trúc thư mục của dự án ETL](image/5.jpeg)
+![Cấu trúc thư mục của dự án ETL](image/6.jpeg)
