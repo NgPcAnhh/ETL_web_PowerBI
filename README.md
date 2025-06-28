@@ -82,18 +82,20 @@ Docker hóa: giúp dễ triển khai, quản lý và mở rộng quy mô.
 🚀 Hướng dẫn cài đặt
 
 Bước 1: Clone Repo
-
+```
 git clone https://github.com/NgPcAnhh/ETL_web_PowerBI
+```
+```
 cd ETL_web_PowerBI
-
+```
 Bước 2: Thiết lập biến môi trường
 
 Tạo file .env dựa trên mẫu có sẵn để cấu hình đường dẫn, dữ liệu, database,...
 
 Bước 3: Chạy Docker Compose
-
+```
 docker-compose up --build
-
+```
 Lệnh này sẽ khởi động các dịch vụ:
 
 Giao diện Airflow tại localhost:8080
@@ -104,7 +106,7 @@ Database (nếu có cấu hình PostgreSQL, SQLite,...)
 
 Bước 4: Truy cập và kích hoạt DAGs
 
-Truy cập Airflow tại http://localhost:8080
+Truy cập Airflow tại ```http://localhost:8080```
 
 Bật DAG Crawl và DAG ETL (theo lịch định kỳ hoặc thủ công)
 
@@ -124,7 +126,7 @@ Chạy file Flask:
 
 python web_flask/app.py
 
-Truy cập web tại http://localhost:5000
+Truy cập web tại ```http://localhost:5000```
 
 Đăng nhập với tài khoản admin mặc định
 
