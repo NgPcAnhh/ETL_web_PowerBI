@@ -10,23 +10,23 @@ Quy trình được đóng gói bằng Docker và sử dụng Apache Airflow đ�
 
 Pipeline dựa trên nền tảng lý thuyết phân tích tài chính doanh nghiệp, bao gồm các chỉ số quan trọng từ:
 
-Bảng cân đối kế toán
+- Bảng cân đối kế toán
 
-Báo cáo kết quả hoạt động kinh doanh
+- Báo cáo kết quả hoạt động kinh doanh
 
-Báo cáo lưu chuyển tiền tệ
+- Báo cáo lưu chuyển tiền tệ
 
 📊 Nội dung báo cáo tập trung:
 
-Phân tích cấu trúc và cân bằng nguồn vốn - tài sản
+- Phân tích cấu trúc và cân bằng nguồn vốn - tài sản
 
-Khả năng thanh toán và công nợ
+- Khả năng thanh toán và công nợ
 
-Dự báo rủi ro và khủng hoảng tài chính
+- Dự báo rủi ro và khủng hoảng tài chính
 
-Đánh giá tình hình tài chính tổng thể
+- Đánh giá tình hình tài chính tổng thể
 
-Hiệu quả kinh doanh và sinh lời
+- Hiệu quả kinh doanh và sinh lời
 
 ⚙️ Quy trình kỹ thuật
 
